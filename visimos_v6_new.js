@@ -1,0 +1,2 @@
+// simple placeholder orb to confirm load
+const c=document.getElementById('stage');const x=c.getContext('2d');function R(){c.width=innerWidth;c.height=innerHeight;}addEventListener('resize',R);R();function d(){x.clearRect(0,0,c.width,c.height);x.fillStyle='white';x.beginPath();x.arc(c.width/2,c.height/2,50,0,6.28);x.fill();requestAnimationFrame(d);}d();
